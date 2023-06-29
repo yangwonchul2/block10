@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap");
+body {
+  padding: 0;
+  width: 1200px;
+  height: 1000px;
+  margin: auto;
+  margin-top: 50;
+  background-color: antiquewhite;
+}
+#root {
+  height: 50rem;
+  background-color: aquamarine;
+}
+#root .box {
+  margin: 0;
+  width: 100%;
+  height: 30%;
+  background-color: azure;
+}
+
+.box-1 {
+  width: 10rem;
+  height: 10rem;
+  background-color: blue;
+  display: inline-block;
+}
+
+/* #root .box :nth-child(2) {
+  background-color: aqua;
+} */
+
+.box-1:nth-child(3n-1) {
+  background-color: red;
+}
+
+.root-2 {
+}
+.text-box div {
+  font-family: "Gasoek One", sans-serif;
+  font-size: 500px;
+  overflow: scroll;
+  height: 200px;
+}
+
+#root-3 {
+  height: 1000px;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.big-box {
+  width: 48%;
+  height: 98%;
+}
+
+.big-box2 {
+  width: 48%;
+  height: 100%;
+  margin: 1%;
+}
+
+.big-box button {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+}
+
+.big-box img {
+  width: 100%;
+  position: relative;
+  bottom: 200px;
+  transition: all 1s linear;
+}
+
+.big-box button:hover img {
+  background-color: aqua;
+}

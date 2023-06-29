@@ -1,0 +1,17 @@
+.ratio-box {
+  position: relative;
+}
+
+.ratio-box::after {
+  content: "";
+  /* background-color: gold; */
+  display: block;
+}
+
+.ratio-box > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

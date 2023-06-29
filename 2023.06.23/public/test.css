@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+#root {
+}
+
+.container {
+  margin: auto;
+  padding: 0 3rem;
+  max-width: 1300px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 500%;
+  color: gold;
+  margin-bottom: 1rem;
+
+  padding: 0;
+}
+
+.container .pictures .row1 {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container .pictures .row2 {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+
+  min-width: 25rem;
+  gap: 1rem;
+}
+
+/* .container .pictures .row2 .big-box {
+  flex: 1;
+}
+
+.container .pictures .row2 .big-box::after {
+  content: "";
+  background-color: aqua;
+  display: block;
+  padding-bottom: calc((100% - 1rem) / 2);
+}
+
+.container .pictures .row2 .square {
+  flex: 1;
+  border: 1px solid blue;
+}
+
+.square::after {
+  content: "";
+  background-color: aqua;
+  display: block;
+  padding-bottom: 100%;
+} */
+
+.container .pictures .row2 > div {
+  flex: 1;
+}
+
+.big-box::after {
+  padding-bottom: calc((100% - 1rem) / 2);
+}
+.square::after {
+  padding-bottom: 100%;
+}
+
+.container .pictures .row2 .square {
+  /* border: 1px solid blue; */
+}
+.big-box > div {
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid gold;
+}
+.big-box > div img {
+  width: 100%;
+  position: relative;
+  top: -1rem;
+}
+
+.square > div {
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid gold;
+}
+.square > div img {
+  width: 150%;
+  position: relative;
+  top: -80%;
+  left: -24.8%;
+}
+
+@media only screen and (max-width: 480px) {
+  .container .pictures .row2 {
+    min-width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container h1 {
+    font-size: 200%;
+
+    margin-bottom: 0.5rem;
+  }
+}

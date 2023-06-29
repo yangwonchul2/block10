@@ -1,0 +1,140 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.header {
+  width: 1000px;
+  height: 100;
+  margin: auto;
+  color: coral;
+  text-align: center;
+  padding: 20;
+  font-size: 80;
+  font-weight: 900;
+  font-family: serif;
+}
+
+.box {
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+}
+
+.row {
+  height: 300;
+  width: 98%;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.big-box {
+  width: 48%;
+  height: 98%;
+  margin: 1%;
+}
+
+.big-box2 {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+  height: 98%;
+  margin: 1%;
+}
+
+.small-box {
+  width: 49%;
+  height: 100%;
+}
+.small-box .link2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("./2387001");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.small-box .link3 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("./페라리\ 마크.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-color: yellow;
+}
+.big-box .link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("./31920_100030_5613.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(241, 107, 17);
+}
+
+.big-box .link2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("./101299_11250_740.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#root {
+  width: 1200px;
+  height: 1000px;
+  margin: auto;
+}
+
+.row-1 {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.child-box {
+  width: 48%;
+  height: 98%;
+  position: relative;
+  left: 15px;
+}
+
+.child-box button {
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 20px;
+  background-image: url(./31920_100030_5613.jpg);
+  transition: border-radius 0.5s linear;
+}
+
+.child-box button:hover {
+  border-radius: 40px;
+
+  /* transition: 0.5s linear; */
+}
+
+.child-box button img {
+  transition: all 2s ease;
+}
+.child-box button img:hover {
+  /* display: none; */
+  border-radius: 20px;
+  opacity: 0;
+}

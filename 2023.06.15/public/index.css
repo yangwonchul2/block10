@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=Kablammo&display=swap");
+/* #css-file .display {
+  margin: 50px;
+} */
+
+#css-file {
+  padding: 50 100 10 20;
+}
+
+#css-file .display div {
+  display: block;
+  display: inline;
+  display: inline-block;
+  display: none;
+}
+
+#css-file .text {
+  color: darkred;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Gasoek One", sans-serif;
+
+  font-style: italic;
+  font-style: oblique;
+  font-style: normal;
+  /* text-shadow: 10px 10px 0px black; */
+  text-align: center;
+  text-decoration: underline solid blue;
+  text-decoration: overline dotted black;
+  text-decoration: line-through dashed green;
+  text-decoration-color: red;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  letter-spacing: 10px;
+  line-height: 100px;
+}
+#css-file .position {
+  position: relative;
+}
+/* #css-file .position div {
+  position: relative;
+  position: absolute;
+  /* position: fixed; */
+/* 
+  left: 10px;
+  top: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+} */
+*/
+
+/* #css-file .overflow {
+  overflow: scroll;
+  height: 10px;
+} */
+
+#css-file .background {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+#css-file .background :nth-child(1) {
+  background-color: red;
+}
+#css-file .background :nth-child(2) {
+  background-color: blue;
+}
+#css-file .background :nth-child(3) {
+  background-color: green;
+}
+#css-file .background :nth-child(4) {
+  background-color: white;
+}

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
+
+.container {
+  height: 100px;
+  max-width: 1300px;
+  padding: 0 3rem;
+
+  margin: auto;
+}
+
+.title-box {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.title-box h1 {
+  font-size: 1.2rem;
+  /* color: blueviolet; */
+}
+
+.title-box h2 {
+  font-size: 2.6rem;
+  word-break: keep-all;
+}
+
+.square::after {
+  content: "";
+  /* background-color: aqua; */
+  display: block;
+  padding-bottom: 100%;
+}
+
+@media only screen and (max-width: 430px) {
+  .title-box h1 {
+    font-size: 1.1rem;
+  }
+  .title-box h2 {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+}

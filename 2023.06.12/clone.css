@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.box .cell {
+  width: 31%;
+  height: 300px;
+  margin: 1%;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 40;
+}
+
+.box {
+  width: 1200px;
+  margin: auto;
+  padding: 0 330;
+  padding-left: ;
+}
+
+.box .cell {
+  background-color: black;
+  color: aquamarine;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 330;
+  height: 300px;
+  display: flex;
+  margin: auto;
+}
+
+.items {
+  width: 31%;
+  height: 300px;
+  background-color: aqua;
+  margin: 1%;
+}

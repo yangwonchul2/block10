@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 1920px;
+}
+
+#review {
+  background-color: rgb(203, 167, 236);
+  padding: 10rem 0;
+}
+
+#review > h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  color: white;
+}
+
+#review > h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+}
+
+#review button {
+  background-color: rgb(202, 6, 219);
+  color: aliceblue;
+  font-size: 3rem;
+  border-radius: 2rem;
+  border: none;
+  margin: auto;
+  width: 15rem;
+  height: 5rem;
+  display: block;
+}
+
+#review .reviews {
+  height: 25rem;
+}
+
+#review .reviews .item img {
+  width: 20rem;
+}
+.reviews .item {
+  position: relative;
+}
+.reviews .item div {
+  position: absolute;
+  top: 0;
+}
+
+.reviews .item div img {
+  padding: ;
+}

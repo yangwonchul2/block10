@@ -1,0 +1,33 @@
+.flex-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: end;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  height: 200px;
+  align-items: center;
+  /* align-items: stretch; */
+  flex-direction: column;
+}
+
+/* flex-wrap 은 크기가 줄어들때 최소값보다 크기가 줄어들때 
+아래 공간으로 내리게 설정할 수 있음
+/* around 는 하나 기준으로 각각 여백을 일정하게 가짐 
+ between 은 좌 우 양쪽으로 맞추고 같은 간경을 같게함.  
+ evenly는  전체 여백을 같게 함.*/
+/* stretch 는 영역안에서 자신을 늘리는 역할  */
+
+.flex-box div {
+  flex: 1;
+  min-width: 200px;
+  min-height: 50px;
+  background-color: black;
+  height: 50px;
+}
+
+.flex-box div:nth-child(2n) {
+  background-color: red;
+}

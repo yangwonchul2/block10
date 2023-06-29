@@ -1,0 +1,149 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: url(../imgs/intro_bg_pc.png);
+  height: 1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-box {
+  padding: 25px;
+}
+
+.logo-box a {
+  width: 230px;
+  margin: auto;
+  display: block;
+}
+.logo-box img {
+  width: 100%;
+}
+
+.header h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 800;
+  padding: 0px 400px;
+}
+
+.header div .logo2 {
+  color: #ccc;
+
+  /*  0~255 / 0~ff */
+  font-weight: 540;
+  font-size: 25px;
+  padding: 10px 400px;
+}
+
+.title-box {
+  margin-top: 60px;
+}
+
+.button-box {
+  padding: 0 400px;
+  padding-top: 80px;
+}
+
+.button-box div {
+  display: inline-block;
+}
+.button-box button {
+  width: 534px;
+  height: 105px;
+  font-size: 27px;
+  font-weight: 900;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: border-radius 0.5s linear;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.button-box button:hover {
+  border-radius: 100px;
+}
+
+.button-box p {
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+  margin: 40;
+}
+
+.bootcamp button {
+  background: linear-gradient(to right, rgb(121, 189, 235), rgb(150, 195, 231));
+}
+
+.devel-rocket button {
+  background: linear-gradient(to right, red, rgb(252, 161, 128));
+}
+
+.devel-rocket {
+  margin-left: 20px;
+}
+.bootcamp p {
+  color: lightblue;
+}
+.devel-rocket p {
+  color: coral;
+}
+
+.why-kyungil {
+  /* height: 100px; */
+}
+.why-kyungil div {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  left: 100px;
+
+  position: relative;
+}
+
+.why-kyungil .transition-1 {
+  background-color: blue;
+}
+.why-kyungil .transition-2 {
+  background-color: blueviolet;
+}
+.why-kyungil .transition-3 {
+  background-color: chartreuse;
+}
+
+.why-kyungil:hover .transition-1 {
+  left: 1000px;
+  transition: left 5s linear;
+}
+.why-kyungil:hover .transition-2 {
+  left: 1000px;
+  transition: left 5s ease-out;
+}
+.why-kyungil:hover .transition-3 {
+  left: 1000px;
+  transition: left 5s ease;
+}
+
+.square {
+  width: 50%;
+  /* height: 50%; */
+  padding-bottom: 50%;
+  background-color: #f0f;
+}
+
+.six-box {
+  padding: 0 350px;
+}
+
+.six-box .item {
+  width: 31%;
+  height: 300px;
+  margin: 1%;
+  background-color: black;
+  display: inline-block;
+}

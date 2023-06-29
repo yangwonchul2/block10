@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.area {
+  margin: 10px 20px 30px 40px;
+  padding: 40px 30px 20px 10px;
+  border: 1px solid black;
+  border: 2px dashed red;
+  border: 3px dotted blue;
+  border: 4px double green;
+  border-radius: 50px;
+  width: 500px;
+  height: 200px;
+  box-sizing: border-box;
+}
+/* 영역 입력은 시계방향 */
+/* box-sizing - 콘텐츠의 사이즈를 조정. 기준을 콘텐츠가아닌 다루게될 영역을 지정 */
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 4px double green;
+  border-radius: 54px;
+}
+
+.etc {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.etc div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: blanchedalmond;
+}
+
+.etc div:first-child {
+  /* background-color: chartreuse; */
+  background-color: rgba(0, 200, 60, 0.5);
+  left: 50px;
+  top: 50px;
+  z-index: 10;
+  /* opacity: 0.5; */
+}

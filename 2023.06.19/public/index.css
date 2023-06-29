@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 700px;
+}
+
+#root {
+  /* width: 1920px; */
+}
+
+.container {
+  padding: 0 100px;
+
+  max-width: 1200px;
+  margin: auto;
+}

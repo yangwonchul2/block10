@@ -1,0 +1,57 @@
+<html lang="ko">
+  <!-- 페이지 내에서 사용될 언어 -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 이 문서의 언어 포맷에 대한 속성 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- device-width 는 기기 너비에 자동 마춤 -->
+    <title>Element</title>
+    <!-- http://127.0.0.1:5500/index.html  127.0.0.1 은 로컬 서버의 주소, 5500은 포트 -->
+  </head>
+  <body>
+    <div>
+      <q>안녕하세요</q>
+      <blockquote>양원철입니다.</blockquote>
+      <!-- 인용구를 가져올때 사용  -->
+    </div>
+    <div>
+      <h1>Attribute</h1>
+      <ul>
+        <li id="first-class">Attribute, 속성을 말합니다.</li>
+        <li class="first-class">
+          엘리먼트의 시작 부분(여는태그) 엘리먼트 명 다음에 넣을 수 있습니다.
+        </li>
+        <li style="background-color: bisque">
+          대표적으로 id, class, stlye이 있습니다.
+        </li>
+      </ul>
+    </div>
+    <div>
+      <a href="https://naver.com">네이버</a>
+      <a href="https://naver.com" target="_blank"><button>네이버</button></a>
+    </div>
+    <div>
+      <img src="/public/sweet-g9e97eb3f7_1280.jpg" alt="이미지 없음" />
+      <video
+        src="public/vinyl_-_57307 (1080p).mp4"
+        controls
+        loop
+        autoplay
+        muted
+      ></video>
+      <audio src="public/eco-technology-145636.mp3" controls></audio>
+      <!-- autoplay 를 muted 와 같이 사용해야하는 이유는 페이지를 들어갔을때 소리로 인한 피해 영향으로 브라우저상에서 제한되기때문 
+     / audio 에서도 마찬가지로 loop autoplay muted 등 사용가능 / 정책에 따라 제한되는 속성이 있을 수 있음.-->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ilcWHbbVwF4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- iframe -페이지 내에서 다른 페이지를 출력할때 사용하는 엘리먼트 -->
+    </div>
+  </body>
+</html>
