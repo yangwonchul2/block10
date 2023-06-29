@@ -178,3 +178,19 @@ while (num2 < 9) {
     ++num1;
   }
 }
+
+let num4 = 2;
+while (true) {
+  let num3 = 1;
+  while (true) {
+    console.log(num4 + "*" + num3 + "=" + num4 * num3);
+    if (num3 === 9) {
+      break;
+    }
+    num3++;
+  }
+  if (num4 === 9) {
+    break;
+  }
+  num4++;
+}
