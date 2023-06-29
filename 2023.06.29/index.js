@@ -149,12 +149,32 @@ while (a < 100) {
 }
 //  조건이 성립할때 까지 반복문 while
 
-let num1 = 1;
-while (num1 < 9) {
-  let num2 = 1;
-  num1++;
-  while (num2 <= 9) {
-    console.log(num1 + "*" + num2 + "=" + num1 * num2);
-    num2++;
+// let num1 = 2;
+// while (num1 < 10) {
+//   let num2 = 1;
+//   while (num2 < 10) {
+//     console.log(num1 + "*" + num2 + "=" + num1 * num2);
+//     num2++;
+//   }
+//   num1++;
+// }
+
+// let num1 = 1;
+// while (num1 < 9) {
+//   num1++;
+//   num2 = 1;
+//   while (num2 < 10) {
+//     console.log(num1 + "*" + num2 + "=" + num1 * num2);
+//     num2++;
+//   }
+// }
+
+let num2 = 1;
+while (num2 < 9) {
+  ++num2;
+  let num1 = 1;
+  while (num1 < 10) {
+    console.log(num2 + "*" + num1 + "=" + num2 * num1);
+    ++num1;
   }
 }
