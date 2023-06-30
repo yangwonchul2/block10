@@ -179,11 +179,14 @@ while (num2 < 9) {
   }
 }
 
+const temp = document.getElementById("root");
+
 let num4 = 2;
 while (true) {
   let num3 = 1;
   while (true) {
     console.log(num4 + "*" + num3 + "=" + num4 * num3);
+    temp.innerHTML += num4 + "*" + num3 + "=" + num4 * num3 + "<br>";
     if (num3 === 9) {
       break;
     }
