@@ -20,3 +20,24 @@ console.log(document.getElementById("root").innerHTML);
 console.log(document.getElementById("root").outerHTML);
 
 document.getElementById("root").style.border = "1px solid black";
+
+const a = {
+  name: "양원철",
+  age: 29,
+  hobby: "골프",
+  area: "하남",
+  army: {
+    name: "해병대",
+    area: "포항",
+  },
+};
+
+console.log(a);
+
+function AInfo() {
+  this.b = a;
+}
+
+const aInfo = new AInfo();
+console.log(aInfo);
+console.log(aInfo.b);
