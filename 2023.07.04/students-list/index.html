@@ -1,0 +1,152 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 1rem 2rem;
+        border: 1px solid black;
+      }
+      thead tr {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <table>
+        <thead>
+          <tr>
+            <th>Num</th>
+            <th id="name">이름</th>
+            <th id="age">나이</th>
+            <th>취미</th>
+          </tr>
+        </thead>
+        <tbody id="students"></tbody>
+      </table>
+    </div>
+    <script>
+      function Student(name, age, hobby) {
+        this.name = name;
+        this.age = age;
+        this.hobby = [];
+        if (typeof hobby == " object") {
+          this.hobby = hobby;
+        } else {
+          this.hobby.push(hobby); // 취미는 배열로 추가한다.
+        }
+      }
+
+      const students = [
+        new Student("강수빈", 26, ["애니감상", "달리기", "팔굽혀펴기"]),
+        new Student("임태훈", 28, "영화감상"),
+        new Student("양원철", 28, "골프"),
+        new Student("이선균", 30, "맞집 탐방"),
+        new Student("김호현", 26, ["국내여행", "세계 투어"]),
+        new Student("황현준", 28, "드라이브"),
+        new Student("김보람", 30, "일기 쓰기"),
+        new Student("이은재", 25, "드라이브"),
+        new Student("전상민", 28, "드라이브"),
+        // { hobby: ["야구", "수영"] },
+      ];
+      console.log(students);
+
+      const studentsElem = document.getElementById("students"); // html tbody 에 데이터를 넣어주기위해 변수 선언
+
+      // function addStudent(number, student) {
+      // const tempTr = document.createElement("tr");
+      // studentsElem.append(tempTr);
+
+      // const tempNum = document.createElement("td");
+      // const tempName = document.createElement("td");
+      // const tempAge = document.createElement("td");
+      // const tempHobby = document.createElement("td");
+      // tempTr.append(tempNum);
+      // tempTr.append(tempName);
+      // tempTr.append(tempAge);
+      // tempTr.append(tempHobby);
+      // tempNum.innerHTML = number;
+      // tempName.innerHTML = student.name;
+      // tempAge.innerHTML = student.age;
+
+      // student.hobby.forEach((item) => {
+      //   const hobbyElem = document.createElement("div");
+      //   hobbyElem.innerHTML = item;
+      //   tempHobby.append(hobbyElem);
+      // });
+      // }
+      let i = 0;
+      students.forEach((item) => {
+        // 배열에 대한 선언문을 찾아 내부의 배열 아이템을 찾는다. , forEach는 어래이를 프로토타입으로 가져야 사용할 수 있다.
+        // addStudent(++i, item);
+        const tempTr = document.createElement("tr");
+        studentsElem.append(tempTr);
+
+        const tempNum = document.createElement("td");
+        const tempName = document.createElement("td");
+        const tempAge = document.createElement("td");
+        tempNum.innerHTML = ++i;
+        tempName.innerHTML = item.name;
+        tempAge.innerHTML = item.age;
+        tempTr.append(tempNum);
+        tempTr.append(tempName);
+        tempTr.append(tempAge);
+
+        const tempHobby = document.createElement("td");
+        item.hobby.forEach((item) => {
+          const hobbyElem = document.createElement("div");
+          hobbyElem.innerHTML = item;
+          tempHobby.append(hobbyElem);
+        });
+        tempTr.append(tempHobby);
+      });
+
+      function sortName() {
+        studentsElem.innerHTML = "";
+        students.sort((a, b) => {
+          return a.name > b.name ? 1 : -1;
+        });
+
+        let i = 0;
+        students.forEach((item) => {
+          // addStudent(++i, item);
+
+          const tempTr = document.createElement("tr");
+          studentsElem.append(tempTr);
+
+          const tempNum = document.createElement("td");
+          const tempName = document.createElement("td");
+          const tempAge = document.createElement("td");
+          const tempHobby = document.createElement("td");
+          tempTr.append(tempNum);
+          tempTr.append(tempName);
+          tempTr.append(tempAge);
+          tempTr.append(tempHobby);
+          tempNum.innerHTML = ++i;
+          tempName.innerHTML = item.name;
+          tempAge.innerHTML = item.age;
+
+          item.hobby.forEach((item) => {
+            const hobbyElem = document.createElement("div");
+            hobbyElem.innerHTML = item;
+            tempHobby.append(hobbyElem);
+          });
+        });
+
+        // let i = 0;
+        // students.forEach((item) => {
+        //   addStudent(++i, item);
+        // });
+      }
+      sortName();
+    </script>
+  </body>
+</html>
+
+const num1 = 1
