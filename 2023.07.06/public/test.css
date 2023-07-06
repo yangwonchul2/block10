@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#ground {
+  height: 100%;
+  text-align: center;
+  position: relative;
+  background: url(./img/50378308-야구장.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 1250px;
+  margin-bottom: 2rem;
+}
+#position {
+  color: rgb(13, 92, 102);
+  font-weight: 900;
+  font-size: 2rem;
+}
+#position .position1 {
+  display: flex;
+  justify-content: center;
+}
+#position .position1 div {
+  height: 10rem;
+}
+
+#position .top {
+  margin-top: 6rem;
+}
+
+#position .middle div {
+  width: 530px;
+}
+#position .middle2 div {
+  padding: 0 8rem;
+}
+#position .middle3 {
+  margin-top: 1.5rem;
+}
+#position .middle3 div {
+  padding: 0 5.5rem;
+}
+#position .bottom {
+  margin-top: 5rem;
+}
+
+table {
+  margin-top: 3rem;
+  border-collapse: collapse;
+  text-align: center;
+
+  margin: auto;
+}
+th,
+td {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+}
+thead tr {
+  background-color: antiquewhite;
+}

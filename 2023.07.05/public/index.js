@@ -88,10 +88,12 @@ const obj = {
     console.log("h");
   },
 }; // 참조값으로 붙일때 객체 안에서는 명령어 생략
-
+console.log(obj);
 console.log(Object.keys(obj)); // 키를 가져오는 메서드
 console.log(Object.values(obj)); // 값을 가져오는 메서드
-
+Object.keys(obj).forEach((item) => {
+  console.log(item, obj[item]);
+});
 let objA = 1;
 let objB = "a";
 let objC = true;
@@ -200,3 +202,8 @@ console.log(
   })
 );
 // 콜백함수를 넣지 않으면 첫째 자리를 기준으로 비교.
+
+console.log((1).toString());
+console.log("양원철".length);
+
+console.log([2, 23, 1, 2, 234].pop());
