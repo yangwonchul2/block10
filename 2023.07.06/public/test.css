@@ -37,26 +37,24 @@ body {
 }
 
 #position .middle div {
-  width: 530px;
+  width: 600px;
 }
 #position .middle2 div {
-  padding: 0 8rem;
+  width: 400px;
 }
 #position .middle3 {
   margin-top: 1.5rem;
 }
 #position .middle3 div {
-  padding: 0 5.5rem;
+  width: 200px;
 }
 #position .bottom {
   margin-top: 5rem;
 }
 
 table {
-  margin-top: 3rem;
   border-collapse: collapse;
   text-align: center;
-
   margin: auto;
 }
 th,
