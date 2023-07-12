@@ -33,8 +33,8 @@ console.log(car3);
 const carList = [car1, car2, car3];
 // 포문을돌려서 온클릭 함수를 실행
 
-carList.forEach((item) => {
-  document.getElementById("box").innerHTML =
+carList.forEach((item, index) => {
+  document.getElementsByClassName("box")[index].innerHTML =
     "<a href=" + item.link + ">" + "<div>" + item.name + "</div>" + "</a>";
 });
 
