@@ -40,3 +40,20 @@ carList.forEach((item, index) => {
 
 // carInfo.innerHTML = `<div>${car1.name}</div>`;
 // window.open("asdf");
+
+class Test {
+  name;
+  age;
+
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  intro = () => {
+    this.name = "이름은" + name;
+  };
+}
+
+const test = new Test("양원철", 14);
+console.log(test);
