@@ -11,24 +11,54 @@ test = () => {}; //화살함수
 //4   0 ~ 4 까지 숫자 를  1초간격으로 출력한다. for 문을 통해 반복실행을 하였으며 조건으로 i 가 0으로 시작해 5보다 작을때까지만 실행이 된다.
 
 // ------------------------------------------------
-let score = [97, 86, 75, 66, 55, 97, 85, 97, 97, 95];
+// let score = [97, 86, 75, 66, 55, 97, 85, 97, 97, 95];
 
-const test4 = score.sort((a, b) => {
-  return b - a;
-});
-console.log(test4);
-console.log(test4.slice(0, 3));
-for (let i = 0; i < score.length[i]; ++i) {
-  if (test4[i] == test4[i + 1]) {
-    test4.slice(0, 3 + i);
-    console.log(test4);
-  } else {
-    test4.slice(0, 3);
-  }
-}
+// const test4 = score.sort((a, b) => {
+//   return b - a;
+// });
+// console.log(test4);
+// console.log(test4.slice(0, 3));
+// for (let i = 0; i < score.length[i]; ++i) {
+//   if (test4[i] == test4[i + 1]) {
+//     test4.slice(0, 3 + i);
+//     console.log(test4);
+//   } else {
+//     test4.slice(0, 3);
+//   }
+// }
 
 // -------------------------------------------
 const apple = "pineapple is yummy";
 console.log(apple);
 
 console.log(apple.indexOf("apple"));
+
+// --------------------------------
+let Count1 = 0;
+let lank = 0;
+const score = "97 86 75 66 55 97 85 97 97 95";
+function test3() {
+  let array = score.split(" ");
+  console.log(parseInt(array));
+  console.log(array.sort().reverse());
+
+  let temp = array[0];
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+    if (temp == array[i]) {
+      Count1++;
+      lank = 1;
+    } else if (temp > array[i]) {
+      if (lank < 3) {
+        lank += 1;
+        Count1++;
+      }
+
+      temp = array[i];
+    }
+  }
+
+  console.log(Count1);
+}
+
+test3();
