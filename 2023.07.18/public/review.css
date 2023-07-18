@@ -1,0 +1,131 @@
+#review {
+  background-color: rgb(151, 151, 252);
+  color: white;
+  padding: 8rem 0;
+  overflow: hidden;
+  position: relative;
+  /* display: none; */
+}
+
+#review > h1 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#review > h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+@keyframes flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#review .reviews {
+  height: 25rem;
+  margin: 8rem 0;
+}
+#review .reviews::after {
+  content: "";
+  height: 30rem;
+  background: linear-gradient(
+    to right,
+    rgb(151, 151, 252),
+    rgba(151, 151, 252, 0) 10%,
+    rgba(151, 151, 252, 0) 90%,
+    rgb(151, 151, 252) 100%
+  );
+  z-index: 1;
+  width: 100%;
+  /* display: block; */
+  position: absolute;
+}
+#review .reviews > div {
+  animation: flow 16s linear infinite;
+  position: absolute;
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+#review .reviews .item img {
+  width: 23rem;
+}
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#review .reviews .item {
+  position: relative;
+  animation: 8s ease infinite wave;
+}
+@keyframes wave2 {
+  0% {
+    transform: translateY(30%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30%);
+  }
+}
+
+#review .reviews .item:nth-child(2n) {
+  position: relative;
+  animation: 8s ease infinite wave2;
+}
+#review .reviews .item > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3rem 2rem;
+  width: 100%;
+  height: 100%;
+}
+#review .reviews p {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+#review .reviews p:nth-child(3) {
+  padding: 5rem 0 1rem;
+  font-size: 0.9rem;
+  color: blue;
+  font-weight: 900;
+}
+
+#review > button {
+  color: white;
+  width: 13rem;
+  height: 3.5rem;
+  background-color: rgb(107, 11, 197);
+  border-radius: 2rem;
+  border: none;
+  display: block;
+  margin: auto;
+}
+
+#review .reviews .item div img {
+  width: 9rem;
+}
+#review .reviews .item div .picture {
+  width: 5rem;
+  height: 5rem;
+  background-color: red;
+  position: absolute;
+  bottom: 5rem;
+  right: 2.5rem;
+  border-radius: 3rem;
+}
