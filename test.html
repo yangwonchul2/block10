@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>부채꼴 모양의 야구장</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+
+      .field {
+        width: 300px;
+        height: 300px;
+        background-color: #aaddaa;
+        position: relative;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transform: rotate(-30deg);
+      }
+
+      #pitcher-mound {
+        width: 50px;
+        height: 50px;
+        background-color: #ccc;
+        border: 2px solid #333;
+        position: absolute;
+        bottom: 30px;
+        left: 125px;
+      }
+
+      #home-plate {
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 80px solid #fff;
+        position: absolute;
+        bottom: 0;
+        left: 130px;
+      }
+
+      #first-base,
+      #second-base,
+      #third-base {
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid #333;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 50px;
+      }
+
+      #first-base {
+        left: 70px;
+      }
+
+      #second-base {
+        left: 150px;
+      }
+
+      #third-base {
+        left: 110px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>부채꼴 모양의 야구장</h1>
+    </header>
+    <main>
+      <div class="field">
+        <div id="pitcher-mound"></div>
+        <div id="home-plate"></div>
+        <div id="first-base"></div>
+        <div id="second-base"></div>
+        <div id="third-base"></div>
+      </div>
+    </main>
+  </body>
+</html>

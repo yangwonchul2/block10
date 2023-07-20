@@ -1,0 +1,44 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="../swap.js"></script>
+    <script src="../test.js"></script>
+    <script>
+      function sortSelect(arr) {
+        const tempArr = [...arr];
+
+        for (let i = 0; i < tempArr.length - 1; ++i) {
+          let tempIdx = i;
+          for (let j = i + 1; j < tempArr.length; ++j) {
+            if (tempArr[tempIdx] > tempArr[j]) tempIdx = j;
+          }
+          swap(tempArr, i, tempIdx);
+        }
+        console.log(tempArr);
+        return tempArr;
+      }
+
+      console.log(sortSelect(arr));
+    </script>
+    <!-- <script>
+      function sortSelect(arr) {
+        const tempArr = [...arr];
+        for (let i = 0; i < tempArr.length; i++) {
+          let tempIdx = i;
+          for (let j = i; j < tempArr.length; ++j) {
+            if (tempArr[tempIdx] > tempArr[j]) tempIdx = j;
+          }
+          swap(tempArr, i, tempIdx);
+        }
+
+        return tempArr;
+      }
+      let a = sortSelect(arr);
+      console.log(a);
+    </script> -->
+  </body>
+</html>

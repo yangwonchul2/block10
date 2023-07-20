@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>insert</title>
+  </head>
+  <body>
+    <script src="../swap.js"></script>
+    <script src="../test.js"></script>
+    <script>
+      function sortInsert(arr) {
+        const tempArr = [...arr]; // 깊은 복사  원본을 복사해 새로 저장
+        const tempArr2 = arr; // 얕은 복사   기존것 수정  원본을 회손
+
+        for (let i = 1; i < tempArr.length; ++i) {
+          for (let j = i; j > 0; j--) {
+            if (tempArr[j] < tempArr[j - 1]) swap(tempArr, j, j - 1);
+            // else break;
+          }
+        }
+        return tempArr;
+      }
+      console.time("sortInsert");
+      console.log(sortInsert(testArr));
+      console.timeEnd("sortInsert");
+    </script>
+  </body>
+</html>
